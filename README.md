@@ -1,2 +1,7 @@
 # penjualan
-# penjualan
+          Penjualan
+                          /  |   \
+                         /   |    \
+                      Rumah  |     Customer
+                             |
+                           Sales
