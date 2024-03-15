@@ -1,0 +1,124 @@
+GET http://localhost/penjualan/index.php/api/customer/
+###
+POST https://recruitment-test.gltkdev.com/login
+Content-Type: application/x-www-form-urlencoded
+
+username=test%40contoh.com&password=abc
+
+###
+POST http://localhost/penjualan/index.php/api/sales
+Content-Type: application/json
+
+{
+    "nama": "yanto",
+    "email": "yanto@example.com",
+    "telepon": "085234567890",
+    "alamat": "Jalan Baru No. 123"
+}
+
+###
+PUT  http://localhost/penjualan/index.php/api/sales
+Content-Type: application/json
+
+{
+    "id": "2",
+    "nama": "doma",
+    "email": "domA@example.com",
+    "telepon": "081234567890",
+    "alamat": "Jalan Baru No. 123"
+}
+
+###
+PUT  http://localhost/penjualan/index.php/api/customer
+Content-Type: application/json
+
+{
+    "id": "2",
+    "nama": "doma",
+    "email": "domA@example.com",
+    "telepon": "081234567890",
+    "alamat": "Jalan Baru No. 123"
+}
+
+###
+POST http://localhost/penjualan/index.php/api/rumah
+Content-Type: application/json
+
+{
+    "nama": "domah housae",
+    "alamat": "jln.com",
+    "harga": "67890",
+    "luas_tanah": "123",
+    "luas_bangunan":"12"
+}
+###
+PUT  http://localhost/penjualan/index.php/api/rumah
+Content-Type: application/json
+
+{
+    "id":"2",
+    "nama": "housakle",
+    "alamat": "jln.com",
+    "harga": 67890,
+    "luas_tanah": 123,
+    "luas_bangunan":100
+}
+
+###
+PUT  http://localhost/penjualan/index.php/api/customer
+Content-Type: application/json
+
+{
+    "id": "2",
+    "nama": "doma",
+    "email": "domA@example.com",
+    "telepon": "081234567890",
+    "alamat": "Jalan Baru No. 123"
+}
+
+###
+GET http://localhost/penjualan/index.php/api/sales/2
+###
+PUT  http://localhost/penjualan/index.php/api/rumah
+Content-Type: application/json
+
+{
+    "tanggal": "housakle",
+    "alamat": "jln.com",
+    "harga": 67890,
+    "luas_tanah": 123,
+    "luas_bangunan":100
+}
+
+###
+PUT  http://localhost/penjualan/index.php/api/customer
+Content-Type: application/json
+
+{
+    "id": "2",
+    "nama": "doma",
+    "email": "domA@example.com",
+    "telepon": "081234567890",
+    "alamat": "Jalan Baru No. 123"
+}
+
+###
+GET http://localhost/penjualan/index.php/api/penjualan
+###
+POST http://localhost/penjualan/index.php/api/penjualan
+Content-Type: application/json
+
+{
+    "id_rumah": "2",
+    "id_customer": "2",
+    "id_sales": "4",
+    "tanggal": "2024-03-15",
+    "jenis_pembayaran": "Tunai"
+}
+
+
+###
+GET http://localhost/penjualan/index.php/api/penjualan
+
+###
+DELETE http://localhost/penjualan/api/sales/7
